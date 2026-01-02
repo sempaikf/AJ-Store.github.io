@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoStore - Tienda de Tecnología</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-microchip logo-icon"></i>
+                <span>AJ Store</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#store" class="active">Tienda</a></li>
+                <li><a href="#categories">Categorías</a></li>
+                <li><a href="admin.html" target="_blank">Panel Admin</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Tecnología de Vanguardia al Mejor Precio</h1>
+            <p>Descubre nuestra selección premium de cases, audífonos bluetooth, tecnología innovadora y software especializado.</p>
+            <a href="#store" class="btn-hero">Explorar Productos</a>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories-section container" id="categories">
+        <h2 class="section-title">Nuestras Categorías</h2>
+        <div class="categories-grid">
+            <!-- Las categorías se cargan dinámicamente -->
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="products-section container" id="store">
+        <h2 class="section-title">Productos Destacados</h2>
+        
+        <div class="products-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="cases">Cases</button>
+            <button class="filter-btn" data-filter="tech">Tecnología</button>
+            <button class="filter-btn" data-filter="audio">Audífonos</button>
+            <button class="filter-btn" data-filter="software">Software</button>
+        </div>
+        
+        <div class="products-grid" id="products-container">
+            <!-- Los productos se cargan dinámicamente -->
+        </div>
+    </section>
+
+    <!-- Carrito Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> Tu Carrito</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Items del carrito -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button class="btn-checkout">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-store"></i> TecnoStore</h3>
+                    <p>Tienda online especializada en tecnología. Demo funcional para GitHub Pages.</p>
+                    <p class="github-info">
+                        <i class="fab fa-github"></i> 
+                        <a href="https://github.com/tuusuario/turepositorio" target="_blank">Ver código fuente</a>
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-info-circle"></i> Información</h3>
+                    <p><strong>Demo en GitHub Pages</strong></p>
+                    <p>Esta es una demostración estática. Los productos se guardan en localStorage.</p>
+                    <p>Para el panel admin, usa: admin / admin123</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Enlaces</h3>
+                    <p><a href="admin.html" target="_blank"><i class="fas fa-user-shield"></i> Panel Admin</a></p>
+                    <p><a href="https://pages.github.com" target="_blank"><i class="fab fa-github"></i> GitHub Pages Docs</a></p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 TecnoStore. Demo para GitHub Pages. 
+                <br>
+                <small>Los datos se guardan localmente en tu navegador.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

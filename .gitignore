@@ -1,0 +1,18 @@
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar configuraciones locales
+config.local.js
+.env
+
+# Ignorar node_modules si usas Node.js
+node_modules/
+
+# Ignorar archivos de IDE
+.vscode/
+.idea/
+
+# Ignorar builds
+dist/
+build/
